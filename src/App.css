@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(200, 42%, 62%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+  }
+  
+  .main {
+
+   
+    padding: 20px;
+  }
+  
+  .main-title {
+    text-align: center;
+  }
+  
+  .siparis-bilgileri {
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    max-width: 800px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .siparis-bilgileri-title {
+    margin-bottom: 10px;
+  }
+  
+  .form-group-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .form-group {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .form-group:last-child {
+    margin-right: 0;
+  }
+  
+  .short-input {
+    width: 100px;
+  }
+  
+  .aciklama textarea {
+    width: 100%;
+  }
+  
+  .olcu-girisi-toggle button {
+    display: flex;
+    align-items: center;
+    background-color:  #007bff;
+    ;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    
+    color:white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .olcu-girisi-toggle button:hover {
+    background-color: #130ca8;
+  }
+  
+  
+  .olcu-girisi-title {
+   
+    margin-bottom: 10px;
+  }
+  
+  .olcu-girisi {
+
+    background-color: #f5f5f5;
+  
+    border-radius: 5px;
+    flex: 1;
+  }
+  .olcu-girisi,
+.islem-girisi {
+  width: 50%;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  
+}
+.islem-girisi{
+  background-color: #f5f5f5;
+  margin-left: 20px;
+}
+  
+  .olcu-girisi:last-child,
+.islem-girisi:last-child {
+  margin-right: 0;
+}
+.olcu-girisi-title,
+.islem-girisi-title {
+  text-align: center;
+}
+
+  
+
+  
+  .form-group {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .form-group:last-child {
+    margin-right: 0;
+  }
+  
+  .cross-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  .form-group input[type='text'],
+  .form-group select {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .form-group input[readonly] {
+    background-color: #f7f7f7;
+    cursor: not-allowed;
+  }
+  
+  .form-group input[type='text']:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group .cross-icon {
+    margin-left: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .form-group-row {
+      flex-direction: column;
+    }
+  
+    .olcu-girisi,
+    .islem-girisi {
+      width: 100%;
+   
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+  }
+
+  .ölcü-islem-alani{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .olcu-bilgileri-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .olcu-bilgileri-table th,
+  .olcu-bilgileri-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .olcu-bilgileri-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+ 
+  /* .olcu-bilgileri-table tbody tr:hover {
+    background-color: #f5f5f5;
+  } */
+ 
+  .olcu-girisi-kaydet button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .olcu-girisi-kaydet button:hover {
+    background-color: #0069d9;
+  }
+  .custom-bg {
+    text-align: center;
+    background-color: #f1ecd0; /* Replace with your desired background color */
+  }
+    
+  .custom-bg2 {
+    text-align: center;
+    background-color: #e6f0ff; /* Replace with your desired background color */
+  }
+  .custom-bg3 {
+    text-align: center;
+    background-color: #e7e7e7; /* Replace with your desired background color */
+  }
+
+  .save-icon {
+    margin-right: 5px;
+  }
+
+
+  .table-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .table-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color:black;
+    font-size: 17px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .table-buttons button:hover {
+    color: red;
+  }
+  
+  .table-buttons button:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .table-buttons.active {
+    background-color: lightblue;
+  }
+  
+  .highlighted-row {
+    background-color: rgb(173, 230, 221);
+  }
+  
